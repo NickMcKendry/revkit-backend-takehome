@@ -10,7 +10,6 @@ exports.up = function(knex, Promise) {
           .references('uid')
           .inTable('users')
           .onDelete('cascade')
-      table.dateTime('postDate')
     })
 };
 
